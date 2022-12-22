@@ -1,0 +1,13 @@
+#timer {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  button {
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+  }
