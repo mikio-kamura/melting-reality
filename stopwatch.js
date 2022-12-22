@@ -23,7 +23,7 @@ function startTimer() {
   document.getElementById('pause-button').style.display = 'inline';
   // 「始める」ボタンを非表示にする
   document.getElementById('start-button').style.display = 'none';
-  document.getElementById('start-button').addEventListener('click', pauseTimer);
+  
 }
 
 function pauseTimer() {
@@ -125,6 +125,6 @@ function notify() {
         body: 'タイマーが終了しました。次のタスクを開始してください。'
     });
 }
-
-document.getElementById('start-button').addEventListener('click', startTimer);
-
+if (isRunning==false) {
+    document.getElementById('start-button').addEventListener('click', startTimer);
+}
